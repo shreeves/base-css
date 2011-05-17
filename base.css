@@ -1,0 +1,254 @@
+@charset 'utf-8';
+
+/*============================================================*/
+/* web fonts */
+
+/*
+Web font declarations/imports.
+*/
+
+/*============================================================*/
+/* reset */
+
+/* base styling */
+a, abbr, address, applet, article, aside, audio, b, big, blockquote, body, br, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, keygen, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, .reset, rp, rt, ruby, s, samp, section, small, source, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, ul, var, video, wbr {
+	margin: 0; padding: 0;
+	border: 0; outline: 0;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* lists */
+ol, ul {
+	list-style: none;
+}
+
+/* tables */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, td, th {
+	text-align: left;
+}
+
+/* quotes */
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/*============================================================*/
+/* clear fixes */
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.clear {
+	height: 0; line-height: 0;
+	margin: 0; padding: 0;
+	display: block; clear: both;
+	overflow: hidden;
+	font-size: 1px;
+}
+
+/*============================================================*/
+/* type */
+
+/* defaults */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+/* layout */
+blockquote, h1, h2, h3, h4, h5, h6, hr, ol, p, pre, ul {
+	margin: 0 0 20px 0;
+}
+
+/* size */
+h1, h2, h3 {
+	line-height: 30px;
+}
+h1 {
+	font-size: 26px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 22px;
+}
+h4 {
+	font-size: 20px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+sub, sup {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+/* links */
+a {
+	color: #c00;
+	border-bottom: dotted 1px #333;
+}
+a:hover {
+	border-bottom: solid 1px #333;
+}
+a:visited {
+	color: #666;
+}
+a:active {
+	border: none;
+	outline: dotted 1px #333;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	border-bottom: none;
+}
+
+/* text-level semantics */
+strong, b, mark {
+	font-weight: bold;
+}
+em, i, mark, q {
+	font-style: italic;
+}
+abbr[title], dfn[title] {
+	border-bottom: dotted 1px #333;
+	cursor: help;
+}
+ins, mark {
+	color: inherit;
+	background: #ffc;
+}
+del, s {
+	text-decoration: line-through;
+}
+cite {
+	font-style: italic;
+}
+sub {
+	vertical-align: bottom;
+}
+sup {
+	vertical-align: top;
+}
+
+/* selection */
+::-moz-selection {
+	background: #900;
+	color: #fff;
+}
+::selection {
+	background: #900;
+	color: #fff;
+}
+
+/*============================================================*/
+/* lists */
+
+ol, ul {
+	padding: 0 0 0 20px;
+	list-style-position: outside;
+}
+
+/* ordered */
+ol {
+	padding: 0 0 0 25px;
+	list-style-type: decimal;
+}
+li ol {
+	margin: 0; padding: 0 0 0 20px;
+	list-style-type: lower-roman;
+}
+
+/* unordered */
+ul {
+	list-style-type: disc;
+}
+li ul {
+	margin: 0;
+	list-style-type: circle;
+}
+
+/*============================================================*/
+/* preformatted text and code */
+
+pre, code {
+	font-family: monospace;
+}
+pre {
+	line-height: 22px;
+	padding: 0;
+	display: block;
+	white-space: pre-wrap; /* CSS-3 */
+	word-wrap: break-word; /* IE 5.5+ */
+}
+code {
+	padding: 3px 5px;
+	display: inline;
+	background: #555;
+	border: solid 1px #222;
+	color: #eee;
+}
+code::-moz-selection {
+	background: #000;
+	color: #fff;
+}
+code::selection {
+	background: #000;
+	color: #fff;
+}
+pre code {
+	padding: 10px 20px;
+	display: block;
+}
+
+/*============================================================*/
+/* rules */
+
+hr {
+	height: 0;
+	border: none;
+	border-top: solid 3px #ccc;
+	color: #ccc;
+}
+
+/*============================================================*/
+/* general styling */
+
+/*
+Styles that apply to multiple elements in different parts of
+the document.
+*/
+
+/*============================================================*/
+/* element-specific styling */
+
+/*
+Styles that apply to a single, specific element.
+*/
+
+/*============================================================*/
