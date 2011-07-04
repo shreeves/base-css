@@ -237,6 +237,50 @@ hr {
 }
 
 /*============================================================*/
+/* CSS 3 Element Formating */
+
+.round_box{	
+  -moz-border-radius: 12px; 
+  -webkit-border-radius: 12px; 
+   border-radius: 12px; 	          
+  /* stops colour from overflowing into curves*/
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 	
+}
+
+.box_shadow {
+     -moz-box-shadow: 0px 0px 4px #999;
+  -webkit-box-shadow: 0px 0px 4px #999; 
+          box-shadow: 0px 0px 4px #999;
+}
+
+.box_gradient{
+  background-color: #444444;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#999999)); 
+  background-image: -webkit-linear-gradient(top, #444444, #999999); 
+  background-image:    -moz-linear-gradient(top, #444444, #999999); 
+  background-image:     -ms-linear-gradient(top, #444444, #999999); 
+  background-image:      -o-linear-gradient(top, #444444, #999999); 
+  background-image:         linear-gradient(top, #444444, #999999);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#444444', EndColorStr='#999999'); 
+}
+
+
+.box_rotate{	
+	-moz-transform: rotate(2.5deg);  
+	-o-transform: rotate(2.5deg);  
+	-webkit-transform: rotate(2.5deg);  
+	-ms-transform: rotate(2.5deg);  
+	 transform: rotate(2.5deg);  
+     filter: progid:DXImageTransform.Microsoft.Matrix( 
+	     M11=0.9914448613738104, M12=-0.13052619222005157,M21=0.13052619222005157, M22=0.9914448613738104, sizingMethod='auto expand');
+	 zoom: 1;
+}
+
+.text_shadow{
+     text-shadow: 1px 1px 3px #fff; 
+}
+
+/*============================================================*/
 /* general styling */
 
 /*
